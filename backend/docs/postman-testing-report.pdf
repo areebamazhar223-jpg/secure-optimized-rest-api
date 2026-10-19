@@ -1,0 +1,37 @@
+# Postman API Testing Report
+
+## Project Name
+Secure & Optimized REST API
+
+## Testing Tool
+Postman
+
+## Tested Endpoint
+`GET /api/products?page=1&limit=2`
+
+## Automated Response Validation Results
+
+| # | Test Case | Result |
+|---|---|---|
+| 1 | Status code is 200 | PASS |
+| 2 | Response is valid JSON | PASS |
+| 3 | Success should be true | PASS |
+| 4 | Pagination structure is correct | PASS |
+| 5 | Products should be an array | PASS |
+| 6 | Each product has valid fields | PASS |
+| 7 | Cache header is present | PASS |
+
+## Test Summary
+- Total tests: 7
+- Passed: 7
+- Failed: 0
+
+## Additional Verification
+- Pagination response was verified.
+- Cache response header was observed as `MISS` on the request tested.
+- Authentication, authorization, invalid token, expired token, and product-not-found scenarios were tested separately.
+
+## Conclusion
+All seven automated response validation tests passed for the tested Products API request. Additional security scenarios were also tested separately.
+
+**Note:** These results apply only to the scenarios tested; they do not guarantee that every API endpoint or edge case has been tested.
